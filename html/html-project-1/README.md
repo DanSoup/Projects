@@ -14,9 +14,8 @@ You must build a single page website to show off an interest you have. This webs
   * A footer containing copyright information, for example "Copyright © 2019, Code and Stuff. All Rights Reserved"
 * At least one image
 * A hyperlink, perhaps to more information
-* Any of the following if they are relevant and available:
-  * A table of information
-  * An embedded video
+* An  ordered or unoredered list and/or a table of information
+* If relevant, an embedded video
 
 You should use CSS to style the content to make it readable and attractive.
 
