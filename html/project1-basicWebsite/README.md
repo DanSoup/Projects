@@ -1,6 +1,6 @@
 # CaS - HTML Project 1 - A Basic Website
 
-Welcome to Code and Stuff HTML Project 1. In this task you must follow a brief and build a website. Follow the instructions given below and host the project in your own GitHub repository. For instructions on read the [README](README.md) in the root folder of this repository.
+Welcome to Code and Stuff HTML Project 1. In this task you must follow a brief and build a website. Follow the instructions given below and host the project in your own GitHub Page repository. For instructions on setting up and working in your GitHub Page repository read the [README](README.md) in the root folder of this repository.
 
 Remember to regularly commit your code!
 
