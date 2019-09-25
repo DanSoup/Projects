@@ -3,8 +3,6 @@
 
 Welcome to Code and Stuff CSS Project 1 - Four Squares. In this task you must follow a brief and style a pre-built website. Follow the instructions given below and host the project in your own GitHub Page repository. For instructions on setting up and working in your GitHub Page repository read the [README](README.md) in the root folder of this repository.
 
-
-
 Remember to regularly commit your code! When your project is reviewed we will also be viewing your commits.
 
 ## Main Tasks
