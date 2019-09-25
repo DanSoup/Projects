@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FizzBuzz Test Site</title>
+</head>
+<style>
+
+
+</style>
+<body>
+  <header>
+    <h1>CodeandStuff</h1>
+    <h2>FizzBuzz Test</h2>
+  </header>
+  <section id="main-tests">
+
+  </section>
+  <footer>
+
+  </footer>
+</body>
+<script src="index.js">
+  console.log('hi')
+</script>
+<script>
+  
+  const testSection = document.getElementById('main-tests');
+  
+  const tests = [
+    {arg: 1, expected: 1}
+  ];
+
+  const newTest = document.createElement('p')
+  newTest.innerText = 'fizzbuzz(1) returns 1 - ...'
+  testSection.appendChild(newTest)
+  fizzbuzz(1)
+
+</script>
+</html>
