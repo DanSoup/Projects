@@ -1,10 +1,11 @@
 # CaS - HTML Project 1 - A Basic Website
+### 26/09/19
 
 Welcome to Code and Stuff HTML Project 1. In this task you must follow a brief and build a website. Follow the instructions given below and host the project in your own GitHub Page repository. For instructions on setting up and working in your GitHub Page repository read the [README](README.md) in the root folder of this repository.
 
-Remember to regularly commit your code!
+Remember to regularly commit your code! When your project is reviewed we will also be viewing your commits.
 
-## Main Task
+## Main Tasks
 
 You must build a single page website to show off an interest you have. This website should have:
 
@@ -19,6 +20,6 @@ You must build a single page website to show off an interest you have. This webs
 
 You should use CSS to style the content to make it readable and attractive.
 
-## Advanced Task
+## Advanced Tasks
 
 Go through the HTML you've written and make sure it is "semantic". You can read about semantic HTML [HERE](https://developer.mozilla.org/en-US/docs/Glossary/Semantics "Semantics - MDN"). For example, your headings should use the ```<h1-6>``` tags. Semantic HTML makes your website more understandable, not only when you are looking at the code but for things like browsers, search engined and screen readers.
