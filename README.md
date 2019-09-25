@@ -16,7 +16,7 @@ When a new project is added or an existing project is updated you can pull this 
 
 If you don't have a GitHub Pages repository you will need to set one up by following the instructions [here](https://pages.github.com/).
 
-In your GitHub Page repository you should make a folder called "projects" or something similar and add subfolders for each subject (HTML, CSS, etc.). Copy the project folder into the appropriate subject folder.
+In your GitHub Page repository you should make a folder called "projects" or something similar and add subfolders for each subject (HTML, CSS, etc.). Copy the project folder into the appropriate subject folder. You will be able to access your project online by following your GitHub page URL and adding the folder path for your project. For example ```https://*YOUR USERNAME*.github.io/cas-projects/html/basic-website```.
 
 While working on your repository you should regularly commit your code. This is a good habit to get into and will allow you to go back to a previous version if you make a mistake you can't fix. Generally, code should be committed when you've completed a section. A set of commit messages might look something like this:
 
