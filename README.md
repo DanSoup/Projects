@@ -6,7 +6,7 @@ Welcoe to the CodeandStuff project repository. This repository contains projects
 
 Clone this repository using the following link:
 
-```https://github.com/codeandstuff-manchester/Projects.git```
+```https://github.com/codeandstuff-manchester/projects.git```
 
 Then copy the file of the project you want to work on to your GitHub page repository.
 
