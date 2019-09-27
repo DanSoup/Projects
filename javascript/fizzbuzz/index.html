@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>FizzBuzz Test Site</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
 </head>
-<style>
-
-
-</style>
 <body>
   <header>
     <h1>CodeandStuff</h1>
     <h2>FizzBuzz Test</h2>
   </header>
+  <section>
+    <h3>Your Function</h3>
+    <code></code>
+  </section>
   <section id="main-tests">
 
   </section>
@@ -27,6 +28,8 @@
 <script>
   
   const testSection = document.getElementById('main-tests');
+
+  document.getElementsByTagName('code')[0].innerText = fizzbuzz;
 
   const testAsynchronously = i => {
 
