@@ -22,21 +22,42 @@
 
   </footer>
 </body>
-<script src="index.js">
-  console.log('hi')
-</script>
+<script src="index.js"></script>
+<script src="tests.js"></script>
 <script>
   
   const testSection = document.getElementById('main-tests');
-  
-  const tests = [
-    {arg: 1, expected: 1}
-  ];
 
-  const newTest = document.createElement('p')
-  newTest.innerText = 'fizzbuzz(1) returns 1 - ...'
-  testSection.appendChild(newTest)
-  fizzbuzz(1)
+  const testAsynchronously = i => {
+
+    const {arg, expected} = tests[i]
+
+    const testDesc = document.createElement('p')
+    const testRes = document.createElement('p')
+    testDesc.innerText = `expect fizzbuzz(${arg}) to return ${expected}:`
+    testRes.innerText = '\t...'
+    // testDesc.setAttribute('id', `test-p-${i}`)
+    testSection.appendChild(testDesc)
+    testSection.appendChild(testRes)
+    
+    setTimeout(() => {
+      try {
+        if (fizzbuzz(arg) === expected) {
+          testRes.innerText = 'PASS'
+          if (i + 1 < tests.length) testAsynchronously(i + 1);
+        } else {
+          testRes.innerText = 'FAIL'
+        }
+      }
+      catch (e) {
+        testRes.innerText = e
+      }
+    }, 0)
+
+
+  };
+
+  testAsynchronously(0);
 
 </script>
 </html>
