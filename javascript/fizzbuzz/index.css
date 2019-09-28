@@ -1,3 +1,45 @@
 code {
   white-space: pre;
+  font-family: 'Courier New', Courier, monospace;
+  display: block;
+}
+
+code.test-pass {
+  font-weight: bold;
+  color: #006000ff
+}
+
+code.test-fail {
+  font-weight: bold;
+  color: #800000ff
+}
+
+div.logo {
+  background-image: url(https://trello-attachments.s3.amazonaws.com/5cae1a4d87636d045cc2a4f9/5cae1a4d87636d045cc2a50d/391x391/82cac91c00336e316eb408b0d9bd5514/12.png);
+  background-position: center;
+  height: 150px;
+  width: 390px;
+}
+
+div.code-block {
+  border: 5px solid #ff13a7ff;
+  padding: 10px;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+div#main-tests {
+  border: 5px solid black;
+  padding: 10px;
+  overflow-y: scroll;
+  height: 300px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

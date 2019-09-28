@@ -9,15 +9,27 @@
 </head>
 <body>
   <header>
-    <h1>CodeandStuff</h1>
-    <h2>FizzBuzz Test</h2>
+    <div class="logo"></div>
+    <div>
+      <h1>Projects</h1>
+      <h2>Javascript - FizzBuzz</h2>
+    </div>
   </header>
   <section>
-    <h3>Your Function</h3>
-    <code></code>
+    <h3>Description</h3>
+    <p>Write a function that takes a number as an argument and outputs "Fizz" if the number divides by three,"Buzz" if the number divides by five and "FizzBuzz" if the number divides by three and five.</p>
   </section>
-  <section id="main-tests">
+  <section>
+    <h3>Your Function</h3>
+    <div class="code-block">
+      <code></code>
+    </div>
+  </section>
+  <section>
+    <h3>Tests</h3>
+    <div id="main-tests">
 
+    </div>
   </section>
   <footer>
 
@@ -26,18 +38,22 @@
 <script src="index.js"></script>
 <script src="tests.js"></script>
 <script>
-  
+
   const testSection = document.getElementById('main-tests');
 
-  document.getElementsByTagName('code')[0].innerText = fizzbuzz;
+  try {
+    document.getElementsByTagName('code')[0].innerText = `fizzBuzz = ${fizzBuzz}`
+  } catch {
+    document.getElementsByTagName('code')[0].innerText = `There is an error with your function. Press F12 to check the error log.`;
+  }
 
   const testAsynchronously = i => {
 
     const {arg, expected} = tests[i]
 
-    const testDesc = document.createElement('p')
-    const testRes = document.createElement('p')
-    testDesc.innerText = `expect fizzbuzz(${arg}) to return ${expected}:`
+    const testDesc = document.createElement('code')
+    const testRes = document.createElement('code')
+    testDesc.innerText = `expect fizzBuzz(${JSON.stringify(arg)}) to return ${JSON.stringify(expected)}:`
     testRes.innerText = '\t...'
     // testDesc.setAttribute('id', `test-p-${i}`)
     testSection.appendChild(testDesc)
@@ -45,15 +61,18 @@
     
     setTimeout(() => {
       try {
-        if (fizzbuzz(arg) === expected) {
-          testRes.innerText = 'PASS'
+        if (fizzBuzz(arg) === expected) {
+          testRes.innerText = '\tPASS'
+          testRes.className = 'test-pass'
           if (i + 1 < tests.length) testAsynchronously(i + 1);
         } else {
-          testRes.innerText = 'FAIL'
+          testRes.innerText = '\tFAIL'
+          testRes.className = 'test-fail'
         }
       }
       catch (e) {
-        testRes.innerText = e
+        testRes.innerText = `\t${e}`
+        testRes.className = 'test-fail'
       }
     }, 0)
 
